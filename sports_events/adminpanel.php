@@ -110,7 +110,7 @@
 		<header class="header">
         <a href="#default" class="logo" style="color:#FFC107" >Tosports.in</a>
         <div class="header-right">
-        <a class="active" href="display.php">Home</a>
+        <a class="active" href="adminpanel.php">Home</a>
         <a href="featured.php">Featured Events</a>
         <a href="login.php">Login</a>
         <a href="admin.php">Add New Event</a>
@@ -155,16 +155,17 @@
 			</div>
 			<br>
 
+			
+		 <?php
+         }
+		
+		?>
 			<div style="text-align:center">
 			  <span class="dot" onclick="currentSlide(1)"></span> 
 			  <span class="dot" onclick="currentSlide(2)"></span> 
 			  <span class="dot" onclick="currentSlide(3)"></span> 
 			</div>
-		 <?php
-         }
-		
-		?>
-
+			
 	<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);

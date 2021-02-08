@@ -47,8 +47,18 @@
 
 	/* Caption text */
 	.text {
-	  color:black;
+	  color: black;
 	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: relative;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: below;
+	}
+
+	.title {
+	  color: black;
+	  font-size: 20px;
 	  padding: 8px 12px;
 	  position: absolute;
 	  bottom: 8px;
@@ -110,13 +120,13 @@
 		<header class="header">
         <a href="#default" class="logo" style="color:#FFC107" >Tosports.in</a>
         <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="featured.php">Contact</a>
-        <a href="#about">About</a>
+        <a  href="index.php">Home</a>
+        <a class="active"  href="featured.php">Featured Events</a>
+        
         </div>
         </header>
         <br>
-<h1>Featured Events</h1>
+		<h1>Featured Events</h1>
 
         <?php
 
@@ -138,8 +148,8 @@
 			<div class="mySlides fade">
 			  
 			  <img src="<?php echo $fresult['image']; ?>" style="width:100%">
-			  <div class="text" ><?php echo $fresult['Name']; ?></div>
-			  <p> <?php echo $fresult ['Description']; ?> </p>
+			  <div class="title" ><?php echo $fresult['Name']; ?></div>
+			  <div class="text"  > <p> <?php echo $fresult ['Description']; ?> </p> </div>
 			</div>
 
 

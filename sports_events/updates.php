@@ -104,7 +104,7 @@
 </div>
 
 <br>
-<button onclick="window.location.href='display.php'  ;">
+<button onclick="window.location.href='index.php'  ;">
       Go to main page
     </button>
 

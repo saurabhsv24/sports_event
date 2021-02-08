@@ -48,8 +48,18 @@
 
 	/* Caption text */
 	.text {
-	  color: #f2f2f2;
+	  color: black;
 	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: relative;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: below;
+	}
+
+	.title {
+	  color: black;
+	  font-size: 20px;
 	  padding: 8px 12px;
 	  position: absolute;
 	  bottom: 8px;
@@ -144,8 +154,8 @@
 			<div class="mySlides fade">
 			  <div class="numbertext">1 / 3</div>
 			  <img src="<?php echo $fresult['image']; ?>" style="width:100%">
-			  <div class="text"><?php echo $fresult['Name']; ?></div>
-			  <div class="text"><?php echo $fresult ['Description']; ?> </div>
+			  <div class="title"><?php echo $fresult['Name']; ?></div>
+			  <div class="text"><p><?php echo $fresult ['Description']; ?> </p></div>
 			</div>
 
 

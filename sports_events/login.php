@@ -2,33 +2,18 @@
 // Initialize the session
 session_start();
 
-define('USER_level' , '1'); 
 
-function isAdmin() {
 
-    if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] && USER_level == $_SESSION['user_level'] ) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
- if (isAdmin() ){
-    header("location: adminpanel.php");
- }
-
- else{
+ 
+ 
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: display.php");
-    exit;
+    header("location: index.php");
+    exit;  ;
 }
- }
+ 
 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] ){
-    header("location: display.php");
-    exit;
-}
+
  
 // Include config file
 require_once "config.php";
